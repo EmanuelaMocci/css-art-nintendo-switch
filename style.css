@@ -37,6 +37,30 @@ body {
   width: 500px;
   border: 1px solid black;
 }
+.inner-screen {
+  background-color: #2a2b2d;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-screen-dark {
+  height: 270px;
+  width: 465px;
+  background-color: #101010;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-screen-light {
+  background-color: #2b2c2e;
+  height: 218px;
+  width: 387px;
+  border-radius: 2px;
+  box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.07);
+}
 /* /center */
 
 /* right */
