@@ -24,10 +24,17 @@ body {
 .left-component {
   height: 300px;
   width: 120px;
-  border: 1px solid blue;
+  background-color: #46b8de;
   border-radius: 60px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  box-shadow: inset 0px 3px 2px 0px #46b8de,
+    inset 0px 11px 4px -4px rgb(255, 255, 255, 0.5),
+    inset 3px -6px 7px 0px rgba(0, 0, 0, 0.6);
+
+  /* oppure al posto dell'ultimo per l'ombra sinistra e in basso */
+  /* inset 0px -6px 7px 0px rgba(0, 0, 0, 0.6); */
+  /* inset 6px 0px 5px 3px rgba(0, 0, 0, 0.18); */
 }
 /* /left */
 
@@ -71,9 +78,12 @@ body {
 .right-component {
   height: 300px;
   width: 120px;
-  border: 1px solid red;
+  background-color: #ec5f53;
   border-radius: 60px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: inset 0px 3px 2px 0px #ec5f53,
+    inset 0px 11px 4px -4px rgb(255, 255, 255, 0.5),
+    inset -3px -6px 5px 0px rgba(0, 0, 0, 0.3);
 }
 /* /right */
