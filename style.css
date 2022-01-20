@@ -1,0 +1,51 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* /reset */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* common */
+
+/* /common */
+/* main */
+.main-container {
+  display: flex;
+}
+/* /main */
+
+/* left */
+.left-component {
+  height: 300px;
+  width: 120px;
+  border: 1px solid blue;
+  border-radius: 60px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* /left */
+
+/* center */
+.center-component {
+  height: 300px;
+  width: 500px;
+  border: 1px solid black;
+}
+/* /center */
+
+/* right */
+.right-component {
+  height: 300px;
+  width: 120px;
+  border: 1px solid red;
+  border-radius: 60px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* /right */
