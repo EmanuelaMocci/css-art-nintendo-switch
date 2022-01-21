@@ -23,18 +23,80 @@ body {
 /* left */
 .left-component {
   height: 300px;
-  width: 120px;
+  width: 110px;
   background-color: #46b8de;
   border-radius: 60px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: inset 0px 3px 2px 0px #46b8de,
+  box-shadow: inset 0px 4px 2px 0px #46b8de,
     inset 0px 11px 4px -4px rgb(255, 255, 255, 0.5),
     inset 3px -6px 7px 0px rgba(0, 0, 0, 0.6);
 
   /* oppure al posto dell'ultimo per l'ombra sinistra e in basso */
   /* inset 0px -6px 7px 0px rgba(0, 0, 0, 0.6); */
   /* inset 6px 0px 5px 3px rgba(0, 0, 0, 0.18); */
+  display: flex;
+  flex-direction: column;
+}
+.left-top {
+  height: 100px;
+  width: 100%;
+  border: 1px solid green;
+}
+.left-center {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.left-center .button {
+  background-color: #49484e;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-shadow: inset 0px -2px 1px 2px rgba(36, 36, 36, 0.67),
+    inset 0px 0px 1px 2px rgba(196, 196, 196, 0.67),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.98);
+  align-self: center;
+  text-align: center;
+  line-height: 25px;
+}
+.button i {
+  color: #191f21;
+  line-height: 25px;
+}
+.left-bottom {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.left-bottom .top-right {
+  width: 20px;
+  height: 20px;
+  background-color: #444444;
+  border-radius: 2px;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px -1px 1px 2px rgba(36, 36, 36, 0.67),
+    0px 1px 1px 1px rgba(0, 0, 0, 0.98);
+}
+.left-bottom .top-right .inner-top-right {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #373436;
+  text-align: center;
+  line-height: 9px;
+  color: #373436;
+  box-shadow: 0px 1px 1px 1px rgba(143, 143, 143, 0.17);
 }
 /* /left */
 
@@ -42,7 +104,6 @@ body {
 .center-component {
   height: 300px;
   width: 500px;
-  border: 1px solid black;
 }
 .inner-screen {
   background-color: #373436;
@@ -67,9 +128,9 @@ body {
 }
 .inner-screen-light {
   background-color: #2b2c2e;
-  height: 218px;
+  height: 222px;
   width: 387px;
-  border-radius: 2px;
+  border-radius: 1px;
   box-shadow: inset 0px 5px 0px 0px rgba(0, 0, 0, 0.07);
 }
 /* /center */
@@ -77,12 +138,12 @@ body {
 /* right */
 .right-component {
   height: 300px;
-  width: 120px;
+  width: 110px;
   background-color: #ec5f53;
   border-radius: 60px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  box-shadow: inset 0px 3px 2px 0px #ec5f53,
+  box-shadow: inset 0px 4px 2px 0px #ec5f53,
     inset 0px 11px 4px -4px rgb(255, 255, 255, 0.5),
     inset -3px -6px 5px 0px rgba(0, 0, 0, 0.3);
 }
