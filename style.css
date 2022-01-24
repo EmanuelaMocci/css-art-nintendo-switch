@@ -146,6 +146,18 @@ body {
     inset -1px 3px 10px 0px #919191;
   z-index: 99;
 }
+.vertical-line-button {
+  height: 46px;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+}
+.horizontal-line-button {
+  width: 46px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+}
 /* /left top */
 
 /* left center */
@@ -164,23 +176,22 @@ body {
   position: relative;
   margin-top: 10px;
 }
-
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .left-center .button,
 .right-top .button {
   background-color: #49484e;
-  height: 23px;
-  width: 23px;
+  height: 21px;
+  width: 21px;
   border-radius: 50%;
   box-shadow: inset 0px -2px 1px 2px rgba(36, 36, 36, 0.67),
     inset 0px 0px 1px 2px rgba(196, 196, 196, 0.67),
     0px 1px 3px 1px rgba(0, 0, 0, 0.98);
   align-self: center;
   text-align: center;
-  line-height: 23px;
+  line-height: 21px;
 }
 .button i {
   color: #191f21;
@@ -289,15 +300,21 @@ body {
   z-index: 9;
 }
 
-/* right top */
-.button-top,
-.button-bottom,
-.button-right,
-.button-left {
+.button {
   color: lightgrey;
   font-family: sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 11.5px;
+}
+.centered {
+  margin: 2px;
+}
+.centered i,
+.centereds i {
+  line-height: 16px;
+}
+.centereds {
+  margin: 0 3px 0 3px;
 }
 /* /right top */
 
@@ -355,16 +372,3 @@ body {
   right: 0;
 }
 /* /Angle */
-
-.vertical-line-button {
-  height: 46px;
-  width: 1px;
-  background-color: black;
-  position: absolute;
-}
-.horizontal-line-button {
-  width: 46px;
-  height: 1px;
-  background-color: black;
-  position: absolute;
-}
